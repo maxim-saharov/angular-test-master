@@ -1,7 +1,31 @@
-.container {
-  //display: flex;
-  //justify-content: center;
-  /*width: 600px;*/
-  /*margin: 0 auto;*/
-  /*text-align: center;*/
+label {
+   margin-right: 1em;
+   font-weight: bold;
 }
+
+table {
+   font-family: arial, sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+}
+
+td,
+th {
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 8px;
+}
+
+tr:nth-child(even) {
+   background-color: #dddddd;
+}
+
+textarea {
+   width: 30em;
+   height: 5em;
+}
+
+.translate{
+   padding: 1rem 0 2rem;
+}
+
