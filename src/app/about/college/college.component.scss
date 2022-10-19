@@ -1,169 +1,98 @@
-:host {
-  font-weight: 400;
 
-  .college-description {
-    max-width: 960px;
-  }
-}
-.all-courses {
-  .search-item-text {
-    margin-left: 10px;
-  }
-}
-.info-header {
-  margin-top: 40px !important;
-  //height: 36px;
-  position: relative;
+.user-photo {
+   width: 300px;
+   text-align: center;
 
-  h1 {
-    font-size: 36px !important;
-    color: #000 !important;
-    //position: absolute;
-    right: -15px;
-  }
-
-  font-weight: 500 !important;
 }
 
 
-.description {
-  display: flex;
-  flex-direction: column;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-.no-wrap {
-  flex-wrap: nowrap !important;
-  align-items: flex-end;
-  a {
-    line-height: 1;
-    font-size: 1.5rem;
-    color: #000;
-    white-space: nowrap;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    cursor: pointer;
-  }
-  a:before {
-    content: none;
-  }
-}
-.content-menu-border {
-  border-bottom: #333 1px solid;
-}
-.active {
-  border-bottom: solid 3px blue;
-  padding-bottom: 8px !important;
-}
-.college-description ::ng-deep {
-  font-size: 1.4rem;
-
-  ul, ol {
-    padding-right: 20px;
-    padding-bottom: 15px;
-  }
-
-  p {
-    padding-bottom: 15px;
-  }
-
-  table {
-    tr, td {
-      border: 1px solid var(--color-border);
-    }
-  }
-
-  a {
-    text-decoration: underline;
-    color: var(--blue);
-  }
-
-  img {
-    height: auto !important;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1165px;
-  }
-}
-@media (max-width: 1000px) {
-  .container {
-    //padding-right: 0 !important;
-  }
-
-  .place-for-graphics {
-    margin-right: 0 !important;
-  }
-}
-@media (min-width: 700px) {
-  .all-courses {
-    .search-item {
-      .search-item-text {
-        margin-left: 20px;
-      }
-    }
-  }
-  .information {
-    padding-top: 20px !important;
-  }
-}
-@media (min-width: 1200px) {
-  .college-description {
-    padding-right: 20px;
-  }
-  .header-block {
-    padding-right: 40px;
-  }
-
-  .place-for-graphics {
-    max-width: 74% !important;
-    margin-right: 0 !important;
-  }
-}
-
-@media (max-width: 575px) {
-  .information {
-    .container {
-      padding: 1rem;
-    }
-  }
-  .college-description {
-    padding: 0 3rem;
-  }
-}
-@media (min-width: 575px) {
-  .info-header {
-    margin-right: -15px;
-  }
-  .container {
-    //padding-right: 0 !important;
-  }
-}
-@media (max-width: 480px) {
-  .place-for-graphics {
-    margin-right: 10px !important;
-    width: 95% !important;
-  }
-  .info-header {
-    margin-right: 15px;
-    height: auto;
-
-    h1 {
-      font-size: 28px !important;
-    }
-
-    font-weight: 400 !important;
-  }
-  .college-description {
-    padding-left: 15px;
-  }
-}
-@media (max-width: 400px) {
-  .no-wrap {
-    a:after {
-      background: transparent !important;
-    }
-  }
-}
+//@media (min-width: 1200px) {
+//   .container {
+//      max-width: 1165px;
+//   }
+//}
+//
+//@media (max-width: 1000px) {
+//   .container {
+//      //padding-right: 0 !important;
+//   }
+//
+//   .place-for-graphics {
+//      margin-right: 0 !important;
+//   }
+//}
+//
+//@media (min-width: 700px) {
+//   .all-courses {
+//      .search-item {
+//         .search-item-text {
+//            margin-left: 20px;
+//         }
+//      }
+//   }
+//   .information {
+//      padding-top: 20px !important;
+//   }
+//}
+//
+//@media (min-width: 1200px) {
+//   .college-description {
+//      padding-right: 20px;
+//   }
+//   .header-block {
+//      padding-right: 40px;
+//   }
+//
+//   .place-for-graphics {
+//      max-width: 74% !important;
+//      margin-right: 0 !important;
+//   }
+//}
+//
+//@media (max-width: 575px) {
+//   .information {
+//      .container {
+//         padding: 1rem;
+//      }
+//   }
+//   .college-description {
+//      padding: 0 3rem;
+//   }
+//}
+//
+//@media (min-width: 575px) {
+//   .info-header {
+//      margin-right: -15px;
+//   }
+//   .container {
+//      //padding-right: 0 !important;
+//   }
+//}
+//
+//@media (max-width: 480px) {
+//   .place-for-graphics {
+//      margin-right: 10px !important;
+//      width: 95% !important;
+//   }
+//   .info-header {
+//      margin-right: 15px;
+//      height: auto;
+//
+//      h1 {
+//         font-size: 28px !important;
+//      }
+//
+//      font-weight: 400 !important;
+//   }
+//   .college-description {
+//      padding-left: 15px;
+//   }
+//}
+//
+//@media (max-width: 400px) {
+//   .no-wrap {
+//      a:after {
+//         background: transparent !important;
+//      }
+//   }
+//}

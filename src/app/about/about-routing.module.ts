@@ -6,8 +6,7 @@ import {CollegeComponent} from './college/college.component';
 const routes: Routes = [
    {
       path: '', component: CollegeComponent
-   },
-   // {path: '**', redirectTo: '/notfound'}
+   }
 ];
 
 @NgModule({

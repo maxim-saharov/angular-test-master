@@ -5,10 +5,12 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ErrorPageComponent} from './components/error-page/error-page.component';
 
 @NgModule({
    declarations: [
-      AppComponent
+      AppComponent,
+      ErrorPageComponent
    ],
    imports: [
       BrowserModule,
