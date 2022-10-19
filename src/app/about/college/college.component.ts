@@ -1,40 +1,49 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 import {finalize} from 'rxjs/operators';
-import {COLLEGE_ABOUT$} from '../about.providers';
-import {Observable} from 'rxjs';
-import {AboutInterface} from '../about.interface';
-import {default_college_translations} from '../translations';
+import {CollegeDataInterface, COLLAGE_TOKEN$, collegeData} from './college.providers';
+import {default_college_translations_EN} from '../translations';
+import {Observable, of} from 'rxjs';
 
 
 @Component({
-    selector: 'app-college',
-    templateUrl: './college.component.html',
-    styleUrls: ['./college.component.scss']
+   selector: 'app-college',
+   templateUrl: './college.component.html',
+   styleUrls: ['./college.component.scss'],
+   providers: [
+      {
+         provide: COLLAGE_TOKEN$,
+         useValue: of(collegeData)
+      }
+   ]
 })
+
 export class CollegeComponent implements OnInit {
-    college?: AboutInterface;
-    isLoading = true;
 
-    translations?: Object;
+   college?: CollegeDataInterface;
 
-    defaultTranslations = default_college_translations;
+   //translations?: Object;
+   translations?: Object;
 
-    constructor(
-        @Inject(COLLEGE_ABOUT$) readonly college$: Observable<AboutInterface>
-    ) {
-    }
+   isLoading = true;
+   defaultTranslations = default_college_translations_EN;
 
-    ngOnInit() {
-        this.getCollege();
-    }
+   constructor(
+      @Inject(COLLAGE_TOKEN$) readonly college$: Observable<CollegeDataInterface[]>
+   ) {}
 
+   ngOnInit() {
+      this.getCollege();
 
-    getCollege(): void {
-        this.college$.subscribe(college => {
-            this.college = college;
-            setTimeout(() => {
-            }, 100);
-        });
-    }
+      this.translations = this.defaultTranslations
+   }
+
+   getCollege(): void {
+
+      this.college$.subscribe(college => {
+         this.college = college[0];
+      });
+
+   }
+
 }
