@@ -1,6 +1,4 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {DomSanitizer} from '@angular/platform-browser';
-import {finalize} from 'rxjs/operators';
 import {CollegeDataInterface, COLLAGE_TOKEN$, collegeData} from './college.providers';
 import {default_college_translations_EN} from '../translations';
 import {Observable, of} from 'rxjs';
@@ -22,10 +20,8 @@ export class CollegeComponent implements OnInit {
 
    college?: CollegeDataInterface;
 
-   //translations?: Object;
    translations?: Object;
 
-   isLoading = true;
    defaultTranslations = default_college_translations_EN;
 
    constructor(

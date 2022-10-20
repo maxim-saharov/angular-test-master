@@ -8,8 +8,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
 
-  //title = 'frontend-remote';
-
   public title = `Angular ${VERSION.major} i18n with ngx-translate`;
   public customNumberValue = 12345;
 

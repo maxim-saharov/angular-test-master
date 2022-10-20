@@ -1,25 +1,47 @@
-#Frontend Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+## Angular Test Master
 
-## Exam instructions
+#### Link where publishes this project: [https://stackblitz.com/github//maxim-saharov/angular-test-master](https://stackblitz.com/github//maxim-saharov/angular-test-master)
 
-1. Run the following commands:
-```
+Link where publish other projects: [https://maxim-saharov.com.ua](https://maxim-saharov.com.ua)
+
+***
+
+### ⛳️ Deployment
+
+* clone project
+```shell
 npm install
-npm start
 ```
-2. Go to http://localhost:4200
-3. Follow the instructions on screen
+```shell
+npm run start
+```
+> You can see project on [http://localhost:4200](http://localhost:4200)
 
-## Development server
+***
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Tech stack:
 
-## Code scaffolding
+* Angular, TypeScript
+* HTML, CSS
+* Only desktop version
+* RxJS, Streams, DI, InjectionToken
+* Git, GitHub
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### If you like 👍 this project don't forget to turn on a star 💛 for it)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[//]: <> (
+How To deploy Angular App
+https://stackoverflow.com/questions/68453909/remove-warning-option-basehref-is-depracated-use-basehref-option-in-the-browse
+//
+how to add something to markdown
+https://habr.com/ru/post/649363/
+here we just write something and then copy the hearts, etc.
+https://lingojam.com/FancyLetters
+https://gist.github.com/rxaviers/7360908
+https://dillinger.io/
+ng new angular-test5 --style=scss
+https://update.angular.io/?v=13.0-14.0
+//
+)
