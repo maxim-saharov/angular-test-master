@@ -45,5 +45,5 @@ Thumbs.db
 /.idea/
 /.vscode/
 /src/saharovData.ts
-#git rm --cached saharovData.ts
-#git commit -m "Remove smart.php only from git"
+#git rm --cached yarn.lock
+#git commit -m "Remove yarn.lock only from git"
